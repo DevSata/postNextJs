@@ -73,28 +73,26 @@ export default function Home() {
 
       <GlobalLoading isLoading={isLoading} />
 
-      <main className="relative pl-4 pb-6 lg:space-y-6">
-        {/* // the nex code  */}
-
+      <main className="relative lg:px-52 md:px-32 sm:px-28 pb-6 lg:space-y-6">
         <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20">
           <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
-            <h1 className="font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4">
+            <h1 className="font-extrabold text-center text-4xl lg:text-5xl tracking-tight md:-mb-4">
               Cross-posting made simple
             </h1>
             <p className="text-lg opacity-80 leading-relaxed">
               Post your content to multiple social media platforms at once. Save
               time, avoid brainrot, and expand your reach.
             </p>
-            <div className="flex flex-col items-center">
-              <li className="btn btn-primary btn-wide text-base">
+            <div className="flex flex-col items-center ">
+              <div className="btn btn-primary btn-wide text-base bg-red-500 px-6 py-1.5 rounded-full text-white ">
                 Try it for free
-              </li>
+              </div>
               <span className="text-xs mt-2 text-base-content/60">
                 No credit card required
               </span>
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-3">
-              <div className="-space-x-5 avatar-group justy-start">
+              {/* <div className="-space-x-5 avatar-group justy-start">
                 <div className="avatar w-12 h-12">
                   <img
                     alt="User"
@@ -140,7 +138,7 @@ export default function Home() {
                     src="/logo.png"
                   />
                 </div>
-              </div>
+              </div> */}
               <div className="flex flex-col justify-center items-center md:items-start gap-1">
                 <div className="rating flex">
                   {[...Array(5)].map((_, i) => (
@@ -166,7 +164,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="lg:w-full">
+          <div className="lg:w-full bg-zinc-900 rounded-lg">
             <div className="bg-base-200 p-6 rounded-lg shadow-lg w-full max-w-2xl mx-auto relative overflow-hidden">
               <h3 className="text-4xl font-bold mb-6 text-center">
                 Watch views grow
@@ -188,17 +186,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/*  // the old code */}
-        {/*  <section className="md:space-y-6 pt-6">
-          {getArray.map((nameCategory, index) => (
-            <Row
-              key={index}
-              movies={getDataFromThatCats(nameCategory)}
-              title={nameCategory}
-            />
-          ))}
-        </section> */}
       </main>
     </motion.div>
   );
