@@ -86,9 +86,9 @@ export default function Home() {
               time, avoid brainrot, and expand your reach.
             </p>
             <div className="flex flex-col items-center">
-              <a href="/" className="btn btn-primary btn-wide text-base">
+              <li href="/" className="btn btn-primary btn-wide text-base">
                 Try it for free
-              </a>
+              </li>
               <span className="text-xs mt-2 text-base-content/60">
                 No credit card required
               </span>
