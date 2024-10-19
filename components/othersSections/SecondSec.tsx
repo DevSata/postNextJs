@@ -1,6 +1,8 @@
-const ViralSection = () => {
+const TheSecSection = () => {
   return (
-    <section className="bg-slate-900 text-neutral-content">
+  
+  
+  <section className="bg-slate-900 text-neutral-content">
       <div className="max-w-7xl mx-auto px-8 py-16 md:py-32 text-center">
         <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
           Your content <i>could have</i> gone VIRAL 📈
@@ -62,7 +64,10 @@ const ViralSection = () => {
         </div>
       </div>
     </section>
-  );
+ 
+
+
+);
 };
 
-export default ViralSection;
+export default TheSecSection;
