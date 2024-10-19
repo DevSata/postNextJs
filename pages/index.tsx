@@ -5,12 +5,12 @@ import GlobalLoading from "@/components/GlobalLoading";
 import HomeBanner from "@/components/HomeBanner";
 import Row from "@/components/Row";
 import ToastContainerBar from "@/components/ToastContainer";
+import ViralSection from "@/components/othersSections/ViralSection";
 import requests from "@/utils/requests";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { itemsData } from "@/typings";
 import Link from "next/link";
-
 import { movies } from "@/data/movies";
 
 function shuffle(array: itemsData[]) {
@@ -76,10 +76,10 @@ export default function Home() {
       <main className="relative lg:px-52 md:px-32 sm:px-28 pb-6 lg:space-y-6">
         <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20">
           <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
-            <h1 className="font-extrabold text-center text-4xl lg:text-5xl tracking-tight md:-mb-4">
+            <h1 className="font-extrabold text-center text-4xl lg:text-3xl lg:text-5xl tracking-tight md:-mb-4">
               Cross-posting made simple
             </h1>
-            <p className="text-lg opacity-80 leading-relaxed">
+            <p className="text-lg opacity-80 leading-relaxed ">
               Post your content to multiple social media platforms at once. Save
               time, avoid brainrot, and expand your reach.
             </p>
@@ -164,9 +164,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="lg:w-full bg-zinc-900 rounded-lg">
+          <div className="lg:w-full bg-zinc-900 rounded-lg md:px-32 sm:px-28">
             <div className="bg-base-200 p-6 rounded-lg shadow-lg w-full max-w-2xl mx-auto relative overflow-hidden">
-              <h3 className="text-4xl font-bold mb-6 text-center">
+              <h3 className="text-4xl font-bold mb-2 text-center">
                 Watch views grow
               </h3>
               <div className="h-64 flex items-center justify-center overflow-hidden">
@@ -186,6 +186,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* //----------- add sec section ----------- */}
+
+        <ViralSection />
       </main>
     </motion.div>
   );
