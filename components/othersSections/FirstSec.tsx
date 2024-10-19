@@ -1,6 +1,6 @@
 const TheFirstSection = () => {
   return (
-    <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20">
+    <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20 lg:px-52 md:px-32 sm:px-28">
       <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
         <h1 className="font-extrabold text-center text-4xl lg:text-3xl lg:text-5xl tracking-tight md:-mb-4">
           Cross-posting made simple
@@ -18,53 +18,6 @@ const TheFirstSection = () => {
           </span>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-3">
-          {/* <div className="-space-x-5 avatar-group justy-start">
-              <div className="avatar w-12 h-12">
-                <img
-                  alt="User"
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  src="/logo.png"
-                />
-              </div>
-              <div className="avatar w-12 h-12">
-                <img
-                  alt="User"
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  src="/logo.png"
-                />
-              </div>
-              <div className="avatar w-12 h-12">
-                <img
-                  alt="User"
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  src="/logo.png"
-                />
-              </div>
-              <div className="avatar w-12 h-12">
-                <img
-                  alt="User"
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  src="/logo.png"
-                />
-              </div>
-              <div className="avatar w-12 h-12">
-                <img
-                  alt="User"
-                  width={50}
-                  height={50}
-                  decoding="async"
-                  src="/logo.png"
-                />
-              </div>
-            </div> */}
           <div className="flex flex-col justify-center items-center md:items-start gap-1">
             <div className="rating flex">
               {[...Array(5)].map((_, i) => (
@@ -90,7 +43,7 @@ const TheFirstSection = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-full bg-zinc-900 rounded-lg md:px-32 sm:px-28">
+      <div className="lg:w-full bg-zinc-900 rounded-lg md:px-32 sm:px-10">
         <div className="bg-base-200 p-6 rounded-lg shadow-lg w-full max-w-2xl mx-auto relative overflow-hidden">
           <h3 className="text-4xl font-bold mb-2 text-center">
             Watch views grow

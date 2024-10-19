@@ -75,10 +75,14 @@ export default function Home() {
 
       <GlobalLoading isLoading={isLoading} />
 
-      <main className="relative lg:px-52 md:px-32 sm:px-28 pb-6 lg:space-y-6">
+      <main className="relative  pb-6 lg:space-y-6">
+      
+      
         <FirstSec />
 
         <SecondSec />
+
+
       </main>
     </motion.div>
   );
