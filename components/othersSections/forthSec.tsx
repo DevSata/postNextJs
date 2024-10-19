@@ -3,7 +3,7 @@ import { GoCheckCircle } from "react-icons/go";
 
 const TheForthSection = () => {
   return (
-    <section className="flex justify-center items-center w-full bg-base-200/50 text-base-content py-20 lg:py-32   bg-sky-950 py-5">
+    <section className="flex justify-center items-center w-full bg-base-200/50 text-base-content py-20 lg:py-32  bg-sky-900 py-5">
       <div className="flex flex-col max-w-[82rem] gap-16 md:gap-20 px-4">
         <h2 className="max-w-3xl font-black text-4xl md:text-6xl tracking-tight">
           Scroll less <br /> and{" "}
