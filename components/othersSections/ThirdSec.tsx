@@ -75,10 +75,7 @@ const TheThirdSection = () => {
                     <h3 className="inline">Post Scheduling</h3>
                   </span>
                 </button>
-                <div
-                  className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden "
-                  style=""
-                >
+                <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden ">
                   <div className="pb-5 leading-relaxed">
                     Schedule your content multiple platforms at the same time. +
                     We store your content for up to 3 months for you, for free!
