@@ -1,9 +1,9 @@
 const TheFirstSection = () => {
   return (
-    <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20 lg:px-52 md:px-32 sm:px-28">
+    <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20 lg:px-52 md:px-32 sm:px-16">
       <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
         <h1 className="font-extrabold text-center text-4xl lg:text-3xl lg:text-5xl tracking-tight md:-mb-4">
-          Cross-posting made simple
+          Grow your social reach the easy way
         </h1>
         <p className="text-lg opacity-80 leading-relaxed ">
           Post your content to multiple social media platforms at once. Save

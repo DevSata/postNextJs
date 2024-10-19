@@ -14,6 +14,7 @@ import { movies } from "@/data/movies";
 // Imported sections
 import SecondSec from "@/components/othersSections/SecondSec";
 import FirstSec from "@/components/othersSections/FirstSec";
+import ThirdSec from "@/components/othersSections/ThirdSec";
 
 function shuffle(array: itemsData[]) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -76,13 +77,11 @@ export default function Home() {
       <GlobalLoading isLoading={isLoading} />
 
       <main className="relative  pb-6 lg:space-y-6">
-      
-      
         <FirstSec />
 
         <SecondSec />
 
-
+        <ThirdSec />
       </main>
     </motion.div>
   );
