@@ -1,7 +1,28 @@
 import { LuRedo } from "react-icons/lu";
 import { GoCheckCircle } from "react-icons/go";
-
+import React, { useState } from "react";
 const TheThirdSection = () => {
+  const [isVisible01, setIsVisible01] = useState<boolean>(false);
+  const [isVisible02, setIsVisible02] = useState<boolean>(false);
+  const [isVisible03, setIsVisible03] = useState<boolean>(false);
+  const [isVisible04, setIsVisible04] = useState<boolean>(false);
+
+  const toggleVisibility01 = () => {
+    setIsVisible01((prev) => !prev);
+  };
+
+  const toggleVisibility02 = () => {
+    setIsVisible01((prev) => !prev);
+  };
+
+  const toggleVisibility03 = () => {
+    setIsVisible01((prev) => !prev);
+  };
+
+  const toggleVisibility04 = () => {
+    setIsVisible01((prev) => !prev);
+  };
+
   return (
     <section
       className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 lg:px-52 md:px-32 sm:px-16"
@@ -22,83 +43,150 @@ const TheThirdSection = () => {
                 <button
                   className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
                   aria-expanded="true"
+                  onClick={toggleVisibility01}
                 >
-                  <span className="duration-100 text-primary">
-                    <GoCheckCircle className="size-8 text-sky-400" />
+                  <span
+                    className={`duration-100 ${
+                      isVisible01 ? "text-green-500" : "text-primary"
+                    }`}
+                  >
+                    {" "}
+                    <GoCheckCircle className="size-8" />
                   </span>
                   <span className="flex-1 text-base-content text-primary font-semibold">
-                    <h3 className="inline">Instant posting</h3>
+                    <h3
+                      className={`inline ${
+                        isVisible01
+                          ? "text-green-500"
+                          : "text-base-content text-primary font-semibold"
+                      }`}
+                    >
+                      Instant posting
+                    </h3>{" "}
                   </span>
                 </button>
-                <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden opacity-1">
-                  <div className="pb-5 leading-relaxed">
-                    Upload your content to post bridge and post it instantly to
-                    any of your connected social media accounts; including
-                    posting to all platforms at the same time.
+
+                {isVisible01 && (
+                  <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden opacity-1">
+                    <div className="pb-5 leading-relaxed">
+                      Upload your content to post bridge and post it instantly
+                      to any of your connected social media accounts; including
+                      posting to all platforms at the same time.
+                    </div>
                   </div>
-                </div>
+                )}
               </li>
 
               <li>
                 <button
                   className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
                   aria-expanded="false"
+                  onClick={toggleVisibility02}
                 >
-                  <span className="duration-100">
+                  <span
+                    className={`duration-100 ${
+                      isVisible02 ? "text-green-500" : "text-primary"
+                    }`}
+                  >
+                    {" "}
                     <GoCheckCircle className="size-8" />
                   </span>
-                  <span className="flex-1 text-base-content">
-                    <h3 className="inline">Post Scheduling</h3>
+                  <span className="flex-1 text-base-content text-primary font-semibold">
+                    <h3
+                      className={`inline ${
+                        isVisible02
+                          ? "text-green-500"
+                          : "text-base-content text-primary font-semibold"
+                      }`}
+                    >
+                      Post Scheduling
+                    </h3>
                   </span>
                 </button>
-                <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden ">
-                  <div className="pb-5 leading-relaxed">
-                    Schedule your content multiple platforms at the same time. +
-                    We store your content for up to 3 months for you, for free!
+                {isVisible02 && (
+                  <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden ">
+                    <div className="pb-5 leading-relaxed">
+                      Schedule your content multiple platforms at the same time.
+                      + We store your content for up to 3 months for you, for
+                      free!
+                    </div>
                   </div>
-                </div>
+                )}
               </li>
 
               <li>
                 <button
                   className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
                   aria-expanded="false"
+                  onClick={toggleVisibility03}
                 >
-                  <span className="duration-100">
+                  <span
+                    className={`duration-100 ${
+                      isVisible03 ? "text-green-500" : "text-primary"
+                    }`}
+                  >
+                    {" "}
                     <GoCheckCircle className="size-8" />
                   </span>
-                  <span className="flex-1 text-base-content">
-                    <h3 className="inline">Unlimited Connections</h3>
+                  <span className="flex-1 text-base-content text-primary font-semibold">
+                    <h3
+                      className={`inline ${
+                        isVisible03
+                          ? "text-green-500"
+                          : "text-base-content text-primary font-semibold"
+                      }`}
+                    >
+                      Unlimited Connections
+                    </h3>
                   </span>
                 </button>
-                <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
-                  <div className="pb-5 leading-relaxed">
-                    Connect as many of your social accounts to post bridge as
-                    you d like. Got 20 TikTok accounts, 30 Instagram accounts, a
-                    bajillion other accounts? Bring em over red rover.
+                {isVisible03 && (
+                  <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
+                    <div className="pb-5 leading-relaxed">
+                      Connect as many of your social accounts to post bridge as
+                      you d like. Got 20 TikTok accounts, 30 Instagram accounts,
+                      a bajillion other accounts? Bring em over red rover.
+                    </div>
                   </div>
-                </div>
+                )}
               </li>
 
               <li>
                 <button
                   className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
                   aria-expanded="false"
+                  onClick={toggleVisibility04}
                 >
-                  <span className="duration-100">
+                  <span
+                    className={`duration-100 ${
+                      isVisible04 ? "text-green-500" : "text-primary"
+                    }`}
+                  >
+                    {" "}
                     <GoCheckCircle className="size-8" />
                   </span>
-                  <span className="flex-1 text-base-content">
-                    <h3 className="inline">Connect with your audience</h3>
+                  <span className="flex-1 text-base-content text-primary font-semibold">
+                    <h3
+                      className={`inline ${
+                        isVisible04
+                          ? "text-green-500"
+                          : "text-base-content text-primary font-semibold"
+                      }`}
+                    >
+                      Connect with your audience
+                    </h3>
                   </span>
                 </button>
-                <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
-                  <div className="pb-5 leading-relaxed">
-                    Engage with your audience using the post bridge dashboard!
-                    Each of your posts has its own comments, likes, and shares
-                    in one place.
+
+                {isVisible04 && (
+                  <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
+                    <div className="pb-5 leading-relaxed">
+                      Engage with your audience using the post bridge dashboard!
+                      Each of your posts has its own comments, likes, and shares
+                      in one place.
+                    </div>
                   </div>
-                </div>
+                )}
               </li>
             </ul>
           </div>
