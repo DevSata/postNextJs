@@ -2,33 +2,33 @@ import { LuRedo } from "react-icons/lu";
 const TheThirdSection = () => {
   return (
     <section
-      class="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100"
+      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100"
       id="features"
     >
-      <div class="px-8">
-        <h2 class="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
+      <div className="px-8">
+        <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
           One place to maximize your social reach
-          <span class="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
+          <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
             effortlessly.
           </span>
         </h2>
 
-        <div class="flex flex-col md:flex-row gap-12 md:gap-24">
-          <div class="grid grid-cols-1 items-stretch gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-20">
-            <ul class="w-full">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-24">
+          <div className="grid grid-cols-1 items-stretch gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-20">
+            <ul className="w-full">
               <li>
                 <button
-                  class="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
+                  className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
                   aria-expanded="true"
                 >
-                  <span class="duration-100 text-primary">
+                  <span className="duration-100 text-primary">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      className="size-6"
                     >
                       <path
                         stroke-linecap="round"
@@ -37,12 +37,12 @@ const TheThirdSection = () => {
                       ></path>
                     </svg>
                   </span>
-                  <span class="flex-1 text-base-content text-primary font-semibold">
-                    <h3 class="inline">Instant posting</h3>
+                  <span className="flex-1 text-base-content text-primary font-semibold">
+                    <h3 className="inline">Instant posting</h3>
                   </span>
                 </button>
-                <div class="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden opacity-1">
-                  <div class="pb-5 leading-relaxed">
+                <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden opacity-1">
+                  <div className="pb-5 leading-relaxed">
                     Upload your content to post bridge and post it instantly to
                     any of your connected social media accounts; including
                     posting to all platforms at the same time.
@@ -52,17 +52,17 @@ const TheThirdSection = () => {
 
               <li>
                 <button
-                  class="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
+                  className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
                   aria-expanded="false"
                 >
-                  <span class="duration-100">
+                  <span className="duration-100">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      className="size-6"
                     >
                       <path
                         stroke-linecap="round"
@@ -71,15 +71,15 @@ const TheThirdSection = () => {
                       ></path>
                     </svg>
                   </span>
-                  <span class="flex-1 text-base-content">
-                    <h3 class="inline">Post Scheduling</h3>
+                  <span className="flex-1 text-base-content">
+                    <h3 className="inline">Post Scheduling</h3>
                   </span>
                 </button>
                 <div
-                  class="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden "
+                  className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden "
                   style=""
                 >
-                  <div class="pb-5 leading-relaxed">
+                  <div className="pb-5 leading-relaxed">
                     Schedule your content multiple platforms at the same time. +
                     We store your content for up to 3 months for you, for free!
                   </div>
@@ -88,17 +88,17 @@ const TheThirdSection = () => {
 
               <li>
                 <button
-                  class="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
+                  className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
                   aria-expanded="false"
                 >
-                  <span class="duration-100">
+                  <span className="duration-100">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      className="size-6"
                     >
                       <path
                         stroke-linecap="round"
@@ -107,12 +107,12 @@ const TheThirdSection = () => {
                       ></path>
                     </svg>
                   </span>
-                  <span class="flex-1 text-base-content">
-                    <h3 class="inline">Unlimited Connections</h3>
+                  <span className="flex-1 text-base-content">
+                    <h3 className="inline">Unlimited Connections</h3>
                   </span>
                 </button>
-                <div class="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
-                  <div class="pb-5 leading-relaxed">
+                <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
+                  <div className="pb-5 leading-relaxed">
                     Connect as many of your social accounts to post bridge as
                     you d like. Got 20 TikTok accounts, 30 Instagram accounts, a
                     bajillion other accounts? Bring em over red rover.
@@ -122,17 +122,17 @@ const TheThirdSection = () => {
 
               <li>
                 <button
-                  class="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
+                  className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
                   aria-expanded="false"
                 >
-                  <span class="duration-100">
+                  <span className="duration-100">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      className="size-6"
                     >
                       <path
                         stroke-linecap="round"
@@ -141,12 +141,12 @@ const TheThirdSection = () => {
                       ></path>
                     </svg>
                   </span>
-                  <span class="flex-1 text-base-content">
-                    <h3 class="inline">Connect with your audience</h3>
+                  <span className="flex-1 text-base-content">
+                    <h3 className="inline">Connect with your audience</h3>
                   </span>
                 </button>
-                <div class="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
-                  <div class="pb-5 leading-relaxed">
+                <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
+                  <div className="pb-5 leading-relaxed">
                     Engage with your audience using the post bridge dashboard!
                     Each of your posts has its own comments, likes, and shares
                     in one place.
