@@ -12,15 +12,15 @@ const TheThirdSection = () => {
   };
 
   const toggleVisibility02 = () => {
-    setIsVisible01((prev) => !prev);
+    setIsVisible02((prev) => !prev);
   };
 
   const toggleVisibility03 = () => {
-    setIsVisible01((prev) => !prev);
+    setIsVisible03((prev) => !prev);
   };
 
   const toggleVisibility04 = () => {
-    setIsVisible01((prev) => !prev);
+    setIsVisible04((prev) => !prev);
   };
 
   return (
