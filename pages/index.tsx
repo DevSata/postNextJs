@@ -5,7 +5,6 @@ import GlobalLoading from "@/components/GlobalLoading";
 import HomeBanner from "@/components/HomeBanner";
 import Row from "@/components/Row";
 import ToastContainerBar from "@/components/ToastContainer";
-import SecondSec from "@/components/othersSections/SecondSec";
 import requests from "@/utils/requests";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
