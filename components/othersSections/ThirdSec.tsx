@@ -4,7 +4,7 @@ import { GoCheckCircle } from "react-icons/go";
 const TheThirdSection = () => {
   return (
     <section
-      className="py-20 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 lg:px-52 md:px-32 sm:px-16"
+      className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 lg:px-52 md:px-32 sm:px-16"
       id="features"
     >
       <div className="px-8">
