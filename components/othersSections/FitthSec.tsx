@@ -76,12 +76,14 @@ export default function Pricing() {
   );
 }
 
-const PriceCard = ({
-  title: string,
-  price: string,
-  description: string,
-  features: string,
-}) => {
+type Props = {
+  title: string;
+  price: string;
+  description: string;
+  features: string;
+};
+
+const PriceCard = ({ title, price, description, features }: Props) => {
   return (
     <div className="relative w-full max-w-lg bg-slate-500 rounded-3xl">
       <div className="relative flex flex-col h-full gap-5 lg:gap-8 z-10 bg-base-100 p-8 rounded-lg">
