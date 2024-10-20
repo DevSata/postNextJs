@@ -15,7 +15,7 @@ export default function Pricing() {
             <div className="join border border-base-content/20 rounded-full bg-base-100 p-1 w-64 grid grid-cols-2 gap-4">
               <button
                 className={`btn btn-sm join-item flex-1 ${
-                  !isYearly ? "btn-primary" : "btn-ghost"
+                  !isYearly ? "bg-emerald-700 rounded-l-full" : "btn-primary"
                 }`}
                 onClick={() => setIsYearly(false)}
               >
@@ -23,7 +23,7 @@ export default function Pricing() {
               </button>
               <button
                 className={`btn btn-sm join-item flex-1 ${
-                  isYearly ? "btn-primary" : "btn-ghost"
+                  isYearly ? "bg-emerald-700 rounded-r-full " : "btn-primary"
                 } relative`}
                 onClick={() => setIsYearly(true)}
               >
@@ -39,7 +39,7 @@ export default function Pricing() {
         <div className="relative flex flex-col md:flex-row justify-center gap-8">
           <PriceCard
             title="Starter"
-            price="7.50"
+            price={` ${isYearly ? "7" : "10"} `}
             description="Grow your reach the easy way"
             features={[
               "5 connected social accounts",
@@ -50,7 +50,7 @@ export default function Pricing() {
           />
           <PriceCard
             title="Creator"
-            price="15"
+            price={` ${isYearly ? "15" : "20"} `}
             description="Create once, post everywhere"
             features={[
               "15 connected social accounts",
@@ -61,7 +61,7 @@ export default function Pricing() {
           />
           <PriceCard
             title="Pro"
-            price="30"
+            price={` ${isYearly ? "30" : "40"} `}
             description="Grow all your accounts, all at once"
             features={[
               "Unlimited connected social accounts",
