@@ -17,7 +17,7 @@ const TheForthSection = () => {
             {/* //----------------// */}
             <div className="bg-green-700 text-primary-content rounded-3xl flex flex-col gap-6 w-full h-[32rem] lg:h-[32rem] w-[24rem] pt-6 overflow-hidden group">
               <div className="px-4 space-y-2 ">
-                <h3 className="font-medium sm:text-xl text-4xl tracking-tight">
+                <h3 className="font-semibold sm:text-xl text-4xl tracking-tight">
                   Less screen time, more views 📈
                 </h3>
                 <p className="opacity-80">
