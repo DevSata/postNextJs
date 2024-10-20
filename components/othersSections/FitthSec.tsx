@@ -1,6 +1,7 @@
 import React from "react";
 import { BsFillCartCheckFill } from "react-icons/bs";
 export default function Pricing() {
+  const [isYearly, setIsYearly] = useState(true);
   return (
     <section className="bg-base-200 overflow-hidden" id="pricing">
       <div className="py-24 px-8 max-w-6xl mx-auto">
@@ -11,10 +12,20 @@ export default function Pricing() {
           </h2>
           <div className="flex justify-center mt-20">
             <div className="join border border-base-content/20 rounded-full bg-base-100 p-1 w-64 grid grid-cols-2 gap-4">
-              <button className="btn btn-sm join-item flex-1 btn-ghost">
+              <button
+                className={`btn btn-sm join-item flex-1 ${
+                  !isYearly ? "btn-primary" : "btn-ghost"
+                }`}
+                onClick={() => setIsYearly(false)}
+              >
                 Monthly
               </button>
-              <button className="btn btn-sm join-item flex-1 bg-emerald-800 btn-primary relative rounded-r-full">
+              <button
+                className={`btn btn-sm join-item flex-1 ${
+                  isYearly ? "btn-primary" : "btn-ghost"
+                } relative`}
+                onClick={() => setIsYearly(true)}
+              >
                 Yearly
                 <span className="bg-emerald-700 absolute -top-3 -right-3 text-[10px] bg-secondary/70 text-secondary-content px-1 py-0.5 rounded-full whitespace-nowrap">
                   2 months free
@@ -64,7 +75,12 @@ export default function Pricing() {
   );
 }
 
-const PriceCard = ({ title, price, description, features }) => {
+const PriceCard = ({
+  title: string,
+  price: string,
+  description: string,
+  features: string,
+}) => {
   return (
     <div className="relative w-full max-w-lg bg-slate-500 rounded-3xl">
       <div className="relative flex flex-col h-full gap-5 lg:gap-8 z-10 bg-base-100 p-8 rounded-lg">
