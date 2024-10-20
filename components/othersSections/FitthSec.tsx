@@ -80,7 +80,7 @@ type Props = {
   title: string;
   price: string;
   description: string;
-  features: string;
+  features: string[];
 };
 
 const PriceCard = ({ title, price, description, features }: Props) => {
