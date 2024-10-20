@@ -2,7 +2,7 @@ import { LuRedo } from "react-icons/lu";
 import { GoCheckCircle } from "react-icons/go";
 import React, { useState } from "react";
 const TheThirdSection = () => {
-  const [isVisible01, setIsVisible01] = useState<boolean>(false);
+  const [isVisible01, setIsVisible01] = useState<boolean>(true);
   const [isVisible02, setIsVisible02] = useState<boolean>(false);
   const [isVisible03, setIsVisible03] = useState<boolean>(false);
   const [isVisible04, setIsVisible04] = useState<boolean>(false);
@@ -25,13 +25,13 @@ const TheThirdSection = () => {
 
   return (
     <section
-      className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 lg:px-52 md:px-32 sm:px-16"
+      className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100  xl:px-52 lg:px-52 md:px-32 sm:px-16"
       id="features"
     >
       <div className="px-8">
         <h2 className="font-extrabold text-4xl lg:text-6xl xl:text-6xl tracking-tight mb-12 md:mb-24">
           One place to maximize your social reach
-          <span className="bg-yellow-300 text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
+          <span className="bg-rose-900 text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
             effortlessly.
           </span>
         </h2>
@@ -191,7 +191,7 @@ const TheThirdSection = () => {
             </ul>
 
             <video
-              className="rounded-2xl aspect-square w-full  w-[26rem] h-[26rem]"
+              className="rounded-2xl aspect-square w-full w-[23rem] h-[23rem]"
               autoPlay
               muted
               loop
