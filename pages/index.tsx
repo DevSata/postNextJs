@@ -16,6 +16,7 @@ import SecondSec from "@/components/othersSections/SecondSec";
 import FirstSec from "@/components/othersSections/FirstSec";
 import ThirdSec from "@/components/othersSections/ThirdSec";
 import Forther from "@/components/othersSections/Forther";
+import FitthSec from "@/components/othersSections/FitthSec";
 
 function shuffle(array: itemsData[]) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -82,6 +83,7 @@ export default function Home() {
         <SecondSec />
         <ThirdSec />
         <Forther />
+        <FitthSec />
       </main>
     </motion.div>
   );
