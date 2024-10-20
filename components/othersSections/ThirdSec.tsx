@@ -29,7 +29,7 @@ const TheThirdSection = () => {
       id="features"
     >
       <div className="px-8">
-        <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
+        <h2 className="font-extrabold text-4xl lg:text-6xl xl:text-6xl tracking-tight mb-12 md:mb-24">
           One place to maximize your social reach
           <span className="bg-yellow-300 text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
             effortlessly.
@@ -37,7 +37,7 @@ const TheThirdSection = () => {
         </h2>
 
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
-          <div className="grid grid-cols-1 items-stretch gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-20">
+          <div className="grid sm:grid-cols-1 items-stretch sm:gap-8 sm:gap-12 grid-cols-2 gap-20">
             <ul className="w-full">
               <li>
                 <button
@@ -189,6 +189,20 @@ const TheThirdSection = () => {
                 )}
               </li>
             </ul>
+
+            <video
+              className="rounded-2xl aspect-square w-full  w-[26rem] h-[26rem]"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              width="300"
+              height="300"
+            >
+              <source src="/feature1vid.mp4" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
