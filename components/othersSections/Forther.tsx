@@ -16,8 +16,8 @@ const TheForthSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-10">
             {/* //----------------// */}
             <div className="bg-green-700 text-primary-content rounded-3xl flex flex-col gap-6 w-full h-[32rem] lg:h-[32rem] w-[24rem] pt-6 overflow-hidden group">
-              <div className="px-6 space-y-2  ">
-                <h3 className="font-bold sm:text-xl text-4xl tracking-tight">
+              <div className="px-4 space-y-2 ">
+                <h3 className="font-medium sm:text-xl text-4xl tracking-tight">
                   Less screen time, more views 📈
                 </h3>
                 <p className="opacity-80">
@@ -28,12 +28,12 @@ const TheForthSection = () => {
               <div className="overflow-hidden h-full flex items-stretch bg-green-100 rounded-3xl">
                 <div className="w-full bg-base-200 rounded-t-box h-full p-6 relative">
                   <div className="relative z-10 flex flex-col items-center justify-center h-full">
-                    <IoMdCloudUpload className="h-16 w-16 text-primary text-black mb-4" />
+                    <IoMdCloudUpload className="h-16 w-16 text-primary text-green-700  mb-4" />
 
                     <p className="text-lg font-semibold mb-2 text-black">
                       Upload to post bridge
                     </p>
-                    <button className="btn btn-primary text-black rounded-full bg-red-500 px-6 py-1.5">
+                    <button className="btn btn-primary text-white rounded-full bg-green-700  px-6 py-1.5">
                       Select File
                     </button>
                   </div>
