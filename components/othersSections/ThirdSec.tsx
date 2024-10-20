@@ -25,7 +25,7 @@ const TheThirdSection = () => {
 
   return (
     <section
-      className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100  xl:px-52 lg:px-52 md:px-32 sm:px-16"
+      className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 xl:px-52 lg:px-52 md:px-32 sm:px-16"
       id="features"
     >
       <div className="px-8">
@@ -37,7 +37,7 @@ const TheThirdSection = () => {
         </h2>
 
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
-          <div className="grid sm:grid-cols-1 items-stretch sm:gap-8 sm:gap-12 grid-cols-2 gap-20">
+          <div className="grid sm:grid-cols-1 sm:gap-8 md:grid-cols-1 md:gap-8 items-stretch  grid-cols-2 gap-20">
             <ul className="w-full">
               <li>
                 <button

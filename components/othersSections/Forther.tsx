@@ -1,21 +1,23 @@
 import { LuRedo } from "react-icons/lu";
+import { IoMdCloudUpload } from "react-icons/io";
 import { GoCheckCircle } from "react-icons/go";
 
 const TheForthSection = () => {
   return (
-    <section className="flex justify-center items-center w-full bg-base-200/50 text-base-content py-20 lg:py-32  bg-sky-900 py-5">
+    <section className="flex justify-center items-center w-full bg-base-200/50 text-base-content py-32 md:py-32 bg-slate-900">
       <div className="flex flex-col max-w-[82rem] gap-16 md:gap-20 px-4">
-        <h2 className="max-w-3xl font-black text-4xl md:text-6xl tracking-tight">
+        <h2 className="max-w-3xl font-black text-6xl md:text-6xl tracking-tight">
           Scroll less <br /> and{" "}
           <span className="underline decoration-dashed underline-offset-8 decoration-base-300">
             do more
           </span>
         </h2>
         <div className="flex flex-col w-full h-fit gap-4 lg:gap-10 text-text-default">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-10">
-            <div className="bg-primary text-primary-content rounded-3xl flex flex-col gap-6 w-full h-[28rem] lg:h-[32rem] pt-6 overflow-hidden group">
-              <div className="px-6 space-y-2">
-                <h3 className="font-bold text-xl lg:text-3xl tracking-tight">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-10">
+            {/* //----------------// */}
+            <div className="bg-green-700 text-primary-content rounded-3xl flex flex-col gap-6 w-full h-[32rem] lg:h-[32rem] w-[24rem] pt-6 overflow-hidden group">
+              <div className="px-6 space-y-2  ">
+                <h3 className="font-bold sm:text-xl text-4xl tracking-tight">
                   Less screen time, more views 📈
                 </h3>
                 <p className="opacity-80">
@@ -23,19 +25,23 @@ const TheForthSection = () => {
                   maximizing your content s reach.
                 </p>
               </div>
-              <div className="overflow-hidden h-full flex items-stretch">
+              <div className="overflow-hidden h-full flex items-stretch bg-green-100 rounded-3xl">
                 <div className="w-full bg-base-200 rounded-t-box h-full p-6 relative">
                   <div className="relative z-10 flex flex-col items-center justify-center h-full">
-                    <GoCheckCircle className="h-16 w-16 text-primary mb-4" />
+                    <IoMdCloudUpload className="h-16 w-16 text-primary text-black mb-4" />
 
-                    <p className="text-lg font-semibold mb-2">
+                    <p className="text-lg font-semibold mb-2 text-black">
                       Upload to post bridge
                     </p>
-                    <button className="btn btn-primary">Select File</button>
+                    <button className="btn btn-primary text-black rounded-full bg-red-500 px-6 py-1.5">
+                      Select File
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+
+            {/*  //---------------//- */}
             <div className="md:col-span-2 bg-base-300 text-base-content rounded-3xl flex flex-col gap-6 w-full h-[28rem] lg:h-[32rem] pt-6 overflow-hidden group">
               <div className="px-6 space-y-2">
                 <h3 className="font-bold text-xl lg:text-3xl tracking-tight">
@@ -110,10 +116,6 @@ const TheForthSection = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex justify-between">
-            <button className="btn btn-primary">Explore more</button>
-            <button className="btn btn-secondary">Learn more</button>
           </div>
         </div>
       </div>
