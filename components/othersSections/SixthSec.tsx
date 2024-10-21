@@ -69,7 +69,7 @@ const QuesCard = ({ title, description, toSee }: Props) => {
       <button
         className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
         aria-expanded="false"
-        onClick={console.log("the getted valiue of title is $title")}
+        /*  onClick={console.log("the getted valiue of title is $title")} */
       >
         <span
           className={`duration-100 ${
