@@ -39,7 +39,6 @@ const TheThirdSection = () => {
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
           <div className="grid sm:grid-cols-1 sm:gap-8 md:grid-cols-1 md:gap-8 items-stretch  grid-cols-2 gap-20">
             <ul className="w-full">
-             
               <QuesCard
                 title="questions 01"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
@@ -51,7 +50,6 @@ const TheThirdSection = () => {
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
                 toSee={isVisible02}
               />
-
             </ul>
           </div>
         </div>
@@ -59,6 +57,7 @@ const TheThirdSection = () => {
     </section>
   );
 };
+
 type Props = {
   title: string;
   description: string;
@@ -79,7 +78,7 @@ const QuesCard = ({ title, description, toSee }: Props) => {
           }`}
         >
           {" "}
-          <FaPlus className="size-8" />
+          <FaPlus className="size-6" />
         </span>
         <span className="flex-1 text-base-content text-primary font-semibold">
           <h3
@@ -95,7 +94,7 @@ const QuesCard = ({ title, description, toSee }: Props) => {
       </button>
       {toSee && (
         <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden ">
-          <div className="pb-5 leading-relaxed">{description}</div>
+          <div className="pb-5 leading-relaxed ml-5">{description}</div>
         </div>
       )}
     </li>
