@@ -32,7 +32,7 @@ const TheThirdSection = () => {
         <h3 className="font-semibold text-lg tracking-tight mb-4 text-green">
           Faq
         </h3>
-        <h2 className="font-extrabold text-4xl lg:text-6xl xl:text-6xl tracking-tight mb-12 md:mb-24">
+        <h2 className="font-extrabold text-4xl lg:text-6xl xl:text-6xl tracking-tight mb-10 md:mb-10">
           Frequent asked questions
         </h2>
 
@@ -40,17 +40,31 @@ const TheThirdSection = () => {
           <div className="grid sm:grid-cols-1 sm:gap-8 md:grid-cols-1 md:gap-8 items-stretch  grid-cols-2 gap-20">
             <ul className="w-full">
               <QuesCard
-                title="questions 01"
+                title="questions 1"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
                 toSee={isVisible01}
                 onSomeEvent={toggleVisibility01}
               />
 
               <QuesCard
-                title="questions 02"
+                title="questions 2"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
                 toSee={isVisible02}
                 onSomeEvent={toggleVisibility02}
+              />
+
+              <QuesCard
+                title="questions 3"
+                description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
+                toSee={isVisible03}
+                onSomeEvent={toggleVisibility03}
+              />
+
+              <QuesCard
+                title="questions 4"
+                description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
+                toSee={isVisible04}
+                onSomeEvent={toggleVisibility04}
               />
             </ul>
           </div>
@@ -81,7 +95,7 @@ const QuesCard = ({ title, description, toSee, onSomeEvent }: Props) => {
           }`}
         >
           {" "}
-          <FaPlus className="size-6" />
+          <FaPlus className="size-5" />
         </span>
         <span className="flex-1 text-base-content text-primary font-semibold">
           <h3
