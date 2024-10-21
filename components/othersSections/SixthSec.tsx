@@ -1,7 +1,8 @@
 import { LuRedo } from "react-icons/lu";
 import { FaPlus } from "react-icons/fa6";
 import React, { useState } from "react";
-const TheThirdSection = () => {
+
+export default function TheThirdSection() {
   const [isVisible01, setIsVisible01] = useState<boolean>(true);
   const [isVisible02, setIsVisible02] = useState<boolean>(false);
   const [isVisible03, setIsVisible03] = useState<boolean>(false);
@@ -29,11 +30,11 @@ const TheThirdSection = () => {
       id="features"
     >
       <div className="px-8">
-        <h3 className="font-semibold text-lg tracking-tight mb-4 text-green">
-          Faq
+        <h3 className="font-semibold text-lg tracking-tight mb-4 text-green-500">
+          FAQ
         </h3>
         <h2 className="font-extrabold text-4xl lg:text-6xl xl:text-6xl tracking-tight mb-10 md:mb-10">
-          Frequent asked questions
+          Frequently Asked Questions
         </h2>
 
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
@@ -72,7 +73,7 @@ const TheThirdSection = () => {
       </div>
     </section>
   );
-};
+}
 
 type Props = {
   title: string;
@@ -86,7 +87,7 @@ const QuesCard = ({ title, description, toSee, onSomeEvent }: Props) => {
     <li>
       <button
         className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
-        aria-expanded="false"
+        aria-expanded={toSee}
         onClick={onSomeEvent}
       >
         <span
@@ -94,8 +95,7 @@ const QuesCard = ({ title, description, toSee, onSomeEvent }: Props) => {
             toSee ? "text-green-500" : "text-primary"
           }`}
         >
-          {" "}
-          <FaPlus className="size-5" />
+          <FaPlus className="w-5 h-5" />
         </span>
         <span className="flex-1 text-base-content text-primary font-semibold">
           <h3
@@ -117,5 +117,3 @@ const QuesCard = ({ title, description, toSee, onSomeEvent }: Props) => {
     </li>
   );
 };
-
-export default TheThirdSection;
