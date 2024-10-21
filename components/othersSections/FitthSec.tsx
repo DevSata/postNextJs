@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { BsFillCartCheckFill } from "react-icons/bs";
+
 export default function Pricing() {
   const [isYearly, setIsYearly] = useState(true);
   return (
