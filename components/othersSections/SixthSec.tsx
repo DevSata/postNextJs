@@ -43,12 +43,13 @@ const TheThirdSection = () => {
                 title="questions 01"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
                 toSee={isVisible01}
+                onSomeEvent={toggleVisibility01}
               />
 
               <QuesCard
                 title="questions 02"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
-                toSee={isVisible02}
+                toSee={toggleVisibility02}
               />
             </ul>
           </div>
@@ -62,15 +63,16 @@ type Props = {
   title: string;
   description: string;
   toSee: boolean;
+  onSomeEvent: () => void;
 };
 
-const QuesCard = ({ title, description, toSee }: Props) => {
+const QuesCard = ({ title, description, toSee, onSomeEvent }: Props) => {
   return (
     <li>
       <button
         className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
         aria-expanded="false"
-        /*  onClick={console.log("the getted valiue of title is $title")} */
+        onClick={onSomeEvent}
       >
         <span
           className={`duration-100 ${
