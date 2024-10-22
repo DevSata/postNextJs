@@ -251,7 +251,7 @@ const ModelCards = ({ title, description, toSee, onSomeEvent }: Props) => {
       <button
         className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
         aria-expanded={toSee}
-        onClick={() => onSomeEvent}
+        onClick={onSomeEvent}
       >
         <span
           className={`duration-100 ${
