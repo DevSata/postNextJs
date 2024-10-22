@@ -35,25 +35,6 @@ function getDataFromThatCats(thatCats: string) {
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  let getArray: string[] = [
-    "Fantasy",
-    "Adventure",
-    "Action",
-    "Comedy",
-    "Horror",
-    "Romance",
-    "Documentary",
-    "Animation",
-    "Sci-Fi",
-    "Mystery",
-    "Western",
-    "Family",
-    "Drama",
-    "Crime",
-    "Thriller",
-    "Music",
-  ];
-
   useEffect(() => {
     try {
       setIsLoading(true);
