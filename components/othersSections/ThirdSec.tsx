@@ -2,29 +2,9 @@ import { LuRedo } from "react-icons/lu";
 import { GoCheckCircle } from "react-icons/go";
 import React, { useState } from "react";
 
-const TheThirdSection = () => {
-  /*  const [isVisible01, setIsVisible01] = useState<boolean>(true);
-  const [isVisible02, setIsVisible02] = useState<boolean>(false);
-  const [isVisible03, setIsVisible03] = useState<boolean>(false);
-  const [isVisible04, setIsVisible04] = useState<boolean>(false);
 
-  const toggleVisibility01 = () => {
-    setIsVisible01((prev) => !prev);
-  };
-
-  const toggleVisibility02 = () => {
-    setIsVisible02((prev) => !prev);
-  };
-
-  const toggleVisibility03 = () => {
-    setIsVisible03((prev) => !prev);
-  };
-
-  const toggleVisibility04 = () => {
-    setIsVisible04((prev) => !prev);
-  };
- */
-  //---------
+export default function TheThirdSection() {
+  
   const [visibleStates, setVisibleStates] = useState({
     isVisible01: true,
     isVisible02: false,
@@ -39,8 +19,7 @@ const TheThirdSection = () => {
     }));
   };
 
-  //---------------
-
+ 
   return (
     <section
       className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 xl:px-52 lg:px-52 md:px-32 sm:px-16"

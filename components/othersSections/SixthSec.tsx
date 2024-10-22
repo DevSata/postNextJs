@@ -2,28 +2,20 @@ import { LuRedo } from "react-icons/lu";
 import { FaPlus } from "react-icons/fa6";
 import React, { useState } from "react";
 
-export default function TheThirdSection() {
-  const [isVisible01, setIsVisible01] = useState<boolean>(true);
-  const [isVisible02, setIsVisible02] = useState<boolean>(false);
-  const [isVisible03, setIsVisible03] = useState<boolean>(false);
-  const [isVisible04, setIsVisible04] = useState<boolean>(false);
+export default function TheSixthSection() {
+  const [visibleStates, setVisibleStates] = useState({
+    isVisible01: true,
+    isVisible02: false,
+    isVisible03: false,
+    isVisible04: false,
+  });
 
-  const toggleVisibility01 = () => {
-    setIsVisible01((prev) => !prev);
+  const toggleVisibility = (key: string) => {
+    setVisibleStates((prev) => ({
+      ...prev,
+      [key]: !prev[key as keyof typeof prev],
+    }));
   };
-
-  const toggleVisibility02 = () => {
-    setIsVisible02((prev) => !prev);
-  };
-
-  const toggleVisibility03 = () => {
-    setIsVisible03((prev) => !prev);
-  };
-
-  const toggleVisibility04 = () => {
-    setIsVisible04((prev) => !prev);
-  };
-
   return (
     <section
       className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 xl:px-52 lg:px-52 md:px-32 sm:px-16"
@@ -43,29 +35,29 @@ export default function TheThirdSection() {
               <QuesCard
                 title="questions 1"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
-                toSee={isVisible01}
-                onSomeEvent={toggleVisibility01}
+                toSee={visibleStates.isVisible01}
+                onSomeEvent={() => toggleVisibility("isVisible01")}
               />
 
               <QuesCard
                 title="questions 2"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
-                toSee={isVisible02}
-                onSomeEvent={toggleVisibility02}
+                toSee={visibleStates.isVisible02}
+                onSomeEvent={() => toggleVisibility("isVisible02")}
               />
 
               <QuesCard
                 title="questions 3"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
-                toSee={isVisible03}
-                onSomeEvent={toggleVisibility03}
+                toSee={visibleStates.isVisible03}
+                onSomeEvent={() => toggleVisibility("isVisible03")}
               />
 
               <QuesCard
                 title="questions 4"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
-                toSee={isVisible04}
-                onSomeEvent={toggleVisibility04}
+                toSee={visibleStates.isVisible04}
+                onSomeEvent={() => toggleVisibility("isVisible04")}
               />
             </ul>
           </div>
