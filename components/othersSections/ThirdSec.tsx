@@ -239,6 +239,12 @@ export default TheThirdSection;
 
 // aadded models here
 
+type Props = {
+  title: string;
+  description: string;
+  toSee: boolean;
+  onSomeEvent: () => void;
+};
 const ModelCards = ({ title, description, toSee, onSomeEvent }: Props) => {
   return (
     <li>
