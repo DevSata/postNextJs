@@ -61,7 +61,7 @@ const TheThirdSection = () => {
                 title="questions 2"
                 description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
                 toSee={isVisible01}
-                onSomeEvent={toggleVisibility("isVisible01")}
+                onSomeEvent={() => toggleVisibility("isVisible01")}
               />
 
               <li>
