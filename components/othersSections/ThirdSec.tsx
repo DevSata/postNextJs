@@ -3,7 +3,7 @@ import { GoCheckCircle } from "react-icons/go";
 import React, { useState } from "react";
 
 const TheThirdSection = () => {
-  const [isVisible01, setIsVisible01] = useState<boolean>(true);
+  /*  const [isVisible01, setIsVisible01] = useState<boolean>(true);
   const [isVisible02, setIsVisible02] = useState<boolean>(false);
   const [isVisible03, setIsVisible03] = useState<boolean>(false);
   const [isVisible04, setIsVisible04] = useState<boolean>(false);
@@ -23,7 +23,7 @@ const TheThirdSection = () => {
   const toggleVisibility04 = () => {
     setIsVisible04((prev) => !prev);
   };
-
+ */
   //---------
   const [visibleStates, setVisibleStates] = useState({
     isVisible01: true,
@@ -57,162 +57,46 @@ const TheThirdSection = () => {
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
           <div className="grid sm:grid-cols-1 sm:gap-8 md:grid-cols-1 md:gap-8 items-stretch  grid-cols-2 gap-20">
             <ul className="w-full">
+              {/*  // the first post  */}
               <ModelCards
-                title="questions 2"
-                description="The sky whispered secrets as the wind gently danced, A melody played on golden fields of endless light, And time stood still in the heart of a dream."
-                toSee={isVisible01}
+                title="Instant posting"
+                description=" Upload your content to post bridge and post it instantly
+                      to any of your connected social media accounts; including
+                      posting to all platforms at the same time."
+                toSee={visibleStates.isVisible01}
                 onSomeEvent={() => toggleVisibility("isVisible01")}
               />
 
-              <li>
-                <button
-                  className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
-                  aria-expanded="true"
-                  onClick={toggleVisibility01}
-                >
-                  <span
-                    className={`duration-100 ${
-                      isVisible01 ? "text-green-500" : "text-primary"
-                    }`}
-                  >
-                    {" "}
-                    <GoCheckCircle className="size-8" />
-                  </span>
-                  <span className="flex-1 text-base-content text-primary font-semibold">
-                    <h3
-                      className={`inline ${
-                        isVisible01
-                          ? "text-green-500"
-                          : "text-base-content text-primary font-semibold"
-                      }`}
-                    >
-                      Instant posting
-                    </h3>{" "}
-                  </span>
-                </button>
+              {/*  // the fisECrst post  */}
 
-                {isVisible01 && (
-                  <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden opacity-1">
-                    <div className="pb-5 leading-relaxed">
-                      Upload your content to post bridge and post it instantly
-                      to any of your connected social media accounts; including
-                      posting to all platforms at the same time.
-                    </div>
-                  </div>
-                )}
-              </li>
+              <ModelCards
+                title="Post Scheduling"
+                description=" Schedule your content multiple platforms at the same time. + We store your content for up to 3 months for you, for free!"
+                toSee={visibleStates.isVisible02}
+                onSomeEvent={() => toggleVisibility("isVisible02")}
+              />
 
-              <li>
-                <button
-                  className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
-                  aria-expanded="false"
-                  onClick={toggleVisibility02}
-                >
-                  <span
-                    className={`duration-100 ${
-                      isVisible02 ? "text-green-500" : "text-primary"
-                    }`}
-                  >
-                    {" "}
-                    <GoCheckCircle className="size-8" />
-                  </span>
-                  <span className="flex-1 text-base-content text-primary font-semibold">
-                    <h3
-                      className={`inline ${
-                        isVisible02
-                          ? "text-green-500"
-                          : "text-base-content text-primary font-semibold"
-                      }`}
-                    >
-                      Post Scheduling
-                    </h3>
-                  </span>
-                </button>
-                {isVisible02 && (
-                  <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden ">
-                    <div className="pb-5 leading-relaxed">
-                      Schedule your content multiple platforms at the same time.
-                      + We store your content for up to 3 months for you, for
-                      free!
-                    </div>
-                  </div>
-                )}
-              </li>
+              {/*  // the third post  */}
 
-              <li>
-                <button
-                  className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
-                  aria-expanded="false"
-                  onClick={toggleVisibility03}
-                >
-                  <span
-                    className={`duration-100 ${
-                      isVisible03 ? "text-green-500" : "text-primary"
-                    }`}
-                  >
-                    {" "}
-                    <GoCheckCircle className="size-8" />
-                  </span>
-                  <span className="flex-1 text-base-content text-primary font-semibold">
-                    <h3
-                      className={`inline ${
-                        isVisible03
-                          ? "text-green-500"
-                          : "text-base-content text-primary font-semibold"
-                      }`}
-                    >
-                      Unlimited Connections
-                    </h3>
-                  </span>
-                </button>
-                {isVisible03 && (
-                  <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
-                    <div className="pb-5 leading-relaxed">
-                      Connect as many of your social accounts to post bridge as
+              <ModelCards
+                title="Unlimited Connections"
+                description="Connect as many of your social accounts to post bridge as
                       you d like. Got 20 TikTok accounts, 30 Instagram accounts,
-                      a bajillion other accounts? Bring em over red rover.
-                    </div>
-                  </div>
-                )}
-              </li>
+                      a bajillion other accounts? Bring em over red rover."
+                toSee={visibleStates.isVisible03}
+                onSomeEvent={() => toggleVisibility("isVisible03")}
+              />
 
-              <li>
-                <button
-                  className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
-                  aria-expanded="false"
-                  onClick={toggleVisibility04}
-                >
-                  <span
-                    className={`duration-100 ${
-                      isVisible04 ? "text-green-500" : "text-primary"
-                    }`}
-                  >
-                    {" "}
-                    <GoCheckCircle className="size-8" />
-                  </span>
-                  <span className="flex-1 text-base-content text-primary font-semibold">
-                    <h3
-                      className={`inline ${
-                        isVisible04
-                          ? "text-green-500"
-                          : "text-base-content text-primary font-semibold"
-                      }`}
-                    >
-                      Connect with your audience
-                    </h3>
-                  </span>
-                </button>
+              {/*  // the fourth post  */}
 
-                {isVisible04 && (
-                  <div className="transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden">
-                    <div className="pb-5 leading-relaxed">
-                      Engage with your audience using the post bridge dashboard!
+              <ModelCards
+                title="Connect with your audience"
+                description="Engage with your audience using the post bridge dashboard!
                       Each of your posts has its own comments, likes, and shares
-                      in one place.
-                    </div>
-                  </div>
-                )}
-              </li>
+                      in one place."
+                toSee={visibleStates.isVisible04}
+                onSomeEvent={() => toggleVisibility("isVisible04")}
+              />
             </ul>
 
             <video
@@ -258,7 +142,7 @@ const ModelCards = ({ title, description, toSee, onSomeEvent }: Props) => {
             toSee ? "text-green-500" : "text-primary"
           }`}
         >
-          <GoCheckCircle className="w-5 h-5" />
+          <GoCheckCircle className="w-8 h-8" />
         </span>
         <span className="flex-1 text-base-content text-primary font-semibold">
           <h3
