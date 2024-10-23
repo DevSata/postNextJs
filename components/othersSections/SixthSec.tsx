@@ -1,4 +1,3 @@
-import { LuRedo } from "react-icons/lu";
 import { FaPlus } from "react-icons/fa6";
 import React, { useState } from "react";
 
@@ -16,6 +15,7 @@ export default function TheSixthSection() {
       [key]: !prev[key as keyof typeof prev],
     }));
   };
+  
   return (
     <section
       className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 xl:px-52 lg:px-52 md:px-32 sm:px-16"

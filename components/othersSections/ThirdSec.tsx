@@ -2,9 +2,7 @@ import { LuRedo } from "react-icons/lu";
 import { GoCheckCircle } from "react-icons/go";
 import React, { useState } from "react";
 
-
 export default function TheThirdSection() {
-  
   const [visibleStates, setVisibleStates] = useState({
     isVisible01: true,
     isVisible02: false,
@@ -19,7 +17,6 @@ export default function TheThirdSection() {
     }));
   };
 
- 
   return (
     <section
       className="py-10 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 xl:px-52 lg:px-52 md:px-32 sm:px-16"
@@ -96,9 +93,7 @@ export default function TheThirdSection() {
       </div>
     </section>
   );
-};
-
-export default TheThirdSection;
+}
 
 // aadded models here
 

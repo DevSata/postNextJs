@@ -1,16 +1,9 @@
 "use client";
 
-import DividerMovieLine from "@/components/DividerMovieLine";
 import GlobalLoading from "@/components/GlobalLoading";
-import HomeBanner from "@/components/HomeBanner";
-import Row from "@/components/Row";
 import ToastContainerBar from "@/components/ToastContainer";
-import requests from "@/utils/requests";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { itemsData } from "@/typings";
-import Link from "next/link";
-import { movies } from "@/data/movies";
 // Imported sections
 import SecondSec from "@/components/othersSections/SecondSec";
 import FirstSec from "@/components/othersSections/FirstSec";
@@ -18,19 +11,6 @@ import ThirdSec from "@/components/othersSections/ThirdSec";
 import Forther from "@/components/othersSections/Forther";
 import FitthSec from "@/components/othersSections/FitthSec";
 import SixthSec from "@/components/othersSections/SixthSec";
-
-function shuffle(array: itemsData[]) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-function getDataFromThatCats(thatCats: string) {
-  const jsonData = movies.filter((movie) => movie.movie_category === thatCats);
-  return shuffle(jsonData).slice(0, 10);
-}
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -68,6 +48,7 @@ export default function Home() {
         <FitthSec />
         <SixthSec />
       </main>
+      
     </motion.div>
   );
 }
